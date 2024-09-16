@@ -45,10 +45,7 @@ The following npm scripts are available in this project:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/ktscates/angular-api-master.git
+   cd angular-api-master
    ```
 
-```
-
-```
