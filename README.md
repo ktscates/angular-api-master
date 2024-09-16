@@ -18,22 +18,7 @@ The following npm scripts are available in this project:
 
 - **`npm run format`**: Formats the codebase using Prettier to enforce consistent code style.
 
-## Project Structure and Key Features
-
-### Project Structure
-
-- **`src/`**: Contains the source code of the Angular application.
-  - **`app/`**: The core application folder.
-    - **`components/`**: Contains Angular components, including `PostListComponent`, `ModalFormComponent`, `PaginationComponent`, etc.
-    - **`services/`**: Contains Angular services, including `ApiClientService` for API interactions.
-    - **`model/`**: Contains TypeScript interfaces for data models, such as `Post` and `Comment`.
-    - **`app.config.ts`**: Configuration file for the application.
-    - **`app.routes.ts`**: Defines the routing configuration for the application.
-  - **`assets/`**: Contains static assets like images and styles.
-  - **`environments/`**: Contains environment configuration files for development and production.
-  - **`styles/`**: Contains global styles and theme files, including `tailwind.config.js`.
-
-### Key Features
+## Key Features
 
 - **Post Management**: Ability to create, edit, delete, and view posts. Modal dialogs are used for creating and editing posts.
 - **Pagination**: Posts are displayed with pagination controls to navigate through different pages of posts.
@@ -43,9 +28,36 @@ The following npm scripts are available in this project:
 
 ## Getting Started
 
-1. **Clone the Repository**:
+### Installation
+
+1. **Clone the repository**:
+
    ```bash
-   git clone https://github.com/ktscates/angular-api-master.git
-   cd angular-api-master
+   git clone https://github.com/ktscates/angular-style-showcase.git
+   cd angular-style-showcase
    ```
 
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+    ```bash
+    ng serve
+    ```
+    Open your browser and navigate to `http://localhost:4200/`.
+
+## Lazy Loading
+
+The project implements lazy loading for one of the modules to optimize loading times and improve performance. This feature ensures that only necessary code is loaded on demand, reducing the initial load size.
+
+## Responsive Design
+
+The application is fully responsive, with a layout that adapts to different screen sizes, ensuring a smooth user experience on both desktop and mobile devices.
+
+## Live Link
+
+You can access the deployed application at [Angular API Master](https://ktscates-angular-api-master.netlify.app/).
