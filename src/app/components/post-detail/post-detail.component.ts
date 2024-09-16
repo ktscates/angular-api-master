@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ApiClientService } from '../../services/api-client.service'
+import { ApiClientService } from '../../services/api/api-client.service'
 import { ActivatedRoute } from '@angular/router'
 import { CommonModule } from '@angular/common'
 import { Comment, Post } from '../../model/model'

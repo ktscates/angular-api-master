@@ -6,7 +6,7 @@
     <h2 class="text-xl font-bold mb-4">
       {{ isEditMode ? 'Edit Post' : 'Add New Post' }}
     </h2>
-    <form (submit)="handleSubmit()">
+    <form (submit)="submit()">
       <div class="mb-4">
         <label for="title" class="block text-sm font-medium text-gray-700"
           >Title</label
@@ -34,7 +34,7 @@
         <button
           type="button"
           class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2"
-          (click)="closeModal()"
+          (click)="close()"
         >
           Cancel
         </button>

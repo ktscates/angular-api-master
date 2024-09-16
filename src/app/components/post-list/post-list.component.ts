@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ApiClientService } from '../../services/api-client.service'
+import { ApiClientService } from '../../services/api/api-client.service'
 import { CommonModule } from '@angular/common'
 import { Router } from '@angular/router'
 import { ModalFormComponent } from '../modal-form/modal-form.component'
@@ -44,6 +44,12 @@ export class PostListComponent implements OnInit {
         console.error('Failed to load posts:', error)
       }
     )
+  }
+
+  savePostsToLocalStorage(): void {
+    if (this.posts) {
+      localStorage.setItem('posts', JSON.stringify(this.posts))
+    }
   }
 
   calculateTotalPages(totalPosts: number): void {
