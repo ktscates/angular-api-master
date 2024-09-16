@@ -79,7 +79,6 @@ export class PostListComponent implements OnInit {
 
   handlePostSubmit(post: Post): void {
     if (this.isEditMode) {
-      // Update existing post
       this.apiClient.updatePost(post.id, post).subscribe(
         () => {
           const index = this.posts!.findIndex(p => p.id === post.id)
@@ -113,7 +112,6 @@ export class PostListComponent implements OnInit {
   }
 
   viewPostDetail(postId: number): void {
-    // Optionally pass the post details directly if available
     const post = this.posts!.find(p => p.id === postId)
     if (post) {
       this.router.navigate(['/post', postId], { state: { post } })
