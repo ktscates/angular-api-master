@@ -1,16 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
-import { AppComponent } from './app.component'
 
-describe('AppComponent', () => {
-  let component: AppComponent
-  let fixture: ComponentFixture<AppComponent>
+import { PaginationComponent } from './pagination.component'
+
+describe('PaginationComponent', () => {
+  let component: PaginationComponent
+  let fixture: ComponentFixture<PaginationComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [PaginationComponent],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(AppComponent)
+    fixture = TestBed.createComponent(PaginationComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

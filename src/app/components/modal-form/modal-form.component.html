@@ -1,0 +1,50 @@
+<div
+  class="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50"
+  *ngIf="isModalOpen"
+>
+  <div class="bg-white w-full max-w-lg p-6 rounded-lg shadow-lg">
+    <h2 class="text-xl font-bold mb-4">
+      {{ isEditMode ? 'Edit Post' : 'Add New Post' }}
+    </h2>
+    <form (submit)="handleSubmit()">
+      <div class="mb-4">
+        <label for="title" class="block text-sm font-medium text-gray-700"
+          >Title</label
+        >
+        <input
+          type="text"
+          id="title"
+          name="title"
+          [(ngModel)]="post.title"
+          class="mt-1 p-2 block w-full border border-gray-300 rounded"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="body" class="block text-sm font-medium text-gray-700"
+          >Body</label
+        >
+        <textarea
+          id="body"
+          name="body"
+          [(ngModel)]="post.body"
+          class="mt-1 p-2 block w-full border border-gray-300 rounded"
+        ></textarea>
+      </div>
+      <div class="flex justify-end">
+        <button
+          type="button"
+          class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2"
+          (click)="closeModal()"
+        >
+          Cancel
+        </button>
+        <button
+          type="submit"
+          class="bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded"
+        >
+          {{ isEditMode ? 'Save Changes' : 'Add Post' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
