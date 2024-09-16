@@ -1,27 +1,54 @@
-# AngularApiMaster
+# Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## Project Description
 
-## Development server
+This Angular project is a dynamic web application designed to showcase proficiency in working with APIs, managing state, and implementing responsive UI components. The application includes features for creating, editing, deleting, and viewing posts, along with pagination and commenting functionalities.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Available npm Scripts
 
-## Code scaffolding
+The following npm scripts are available in this project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **`npm start`**: Runs the Angular application in development mode. This command uses the Angular CLI to start a development server and open the application in a web browser.
 
-## Build
+- **`npm run build`**: Builds the Angular application for production. This command compiles the application and outputs the build artifacts to the `dist` directory.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **`npm test`**: Runs the unit tests for the Angular application using Jest.
 
-## Running unit tests
+- **`npm run lint`**: Lints the TypeScript and HTML files using ESLint to ensure code quality and consistency.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **`npm run format`**: Formats the codebase using Prettier to enforce consistent code style.
 
-## Running end-to-end tests
+## Project Structure and Key Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Project Structure
 
-## Further help
+- **`src/`**: Contains the source code of the Angular application.
+  - **`app/`**: The core application folder.
+    - **`components/`**: Contains Angular components, including `PostListComponent`, `ModalFormComponent`, `PaginationComponent`, etc.
+    - **`services/`**: Contains Angular services, including `ApiClientService` for API interactions.
+    - **`model/`**: Contains TypeScript interfaces for data models, such as `Post` and `Comment`.
+    - **`app.config.ts`**: Configuration file for the application.
+    - **`app.routes.ts`**: Defines the routing configuration for the application.
+  - **`assets/`**: Contains static assets like images and styles.
+  - **`environments/`**: Contains environment configuration files for development and production.
+  - **`styles/`**: Contains global styles and theme files, including `tailwind.config.js`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Key Features
+
+- **Post Management**: Ability to create, edit, delete, and view posts. Modal dialogs are used for creating and editing posts.
+- **Pagination**: Posts are displayed with pagination controls to navigate through different pages of posts.
+- **Commenting**: Each post can display associated comments retrieved from the API.
+- **Responsive Design**: The application is designed to be fully responsive using Tailwind CSS, ensuring a good user experience across various devices.
+- **API Integration**: The application interacts with APIs for fetching, creating, updating, and deleting posts, as well as for fetching comments.
+
+## Getting Started
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+```
+
+```
